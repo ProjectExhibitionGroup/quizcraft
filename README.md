@@ -6,7 +6,7 @@
 
 *Upload your study material. Get an AI-generated summary, adaptive quiz, 3D flashcards, smart notes, and a personal AI tutor — all in seconds.*
 
-[Live Demo](#) · [Report Bug](https://github.com/ProjectExhibitionGroup/quizcraft/issues) · [Request Feature](https://github.com/ProjectExhibitionGroup/quizcraft/issues)
+[Live Demo](https://quizcraft-six.vercel.app/) · [API](https://quizcraft-api-76e8.onrender.com/) · [Report Bug](https://github.com/ProjectExhibitionGroup/quizcraft/issues) · [Request Feature](https://github.com/ProjectExhibitionGroup/quizcraft/issues)
 
 </div>
 
