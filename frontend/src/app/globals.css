@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #25d1f4;
+  --color-primary-dark: #1bbcdb;
+  --color-accent-emerald: #10b981;
+  --color-bg-dark: #0B0F19;
+  --color-surface-dark: #111827;
+  --color-border-dark: #1e293b;
+}
+
+/* ===== Base Styles ===== */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-bg-dark);
+  color: #e2e8f0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== Scrollbar (Webkit) ===== */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg-dark); }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+/* ===== Glass Panel ===== */
+.glass-panel {
+  background: rgba(17, 24, 39, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Neon Glow Utilities ===== */
+.neon-glow-cyan {
+  box-shadow: 0 0 15px rgba(37, 209, 244, 0.3), 0 0 30px rgba(37, 209, 244, 0.1);
+}
+.neon-glow-emerald {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.3), 0 0 30px rgba(16, 185, 129, 0.1);
+}
+.neon-text-cyan {
+  text-shadow: 0 0 10px rgba(37, 209, 244, 0.5);
+}
+
+/* ===== Flashcard 3D ===== */
+.perspective-1000 { perspective: 1000px; }
+.preserve-3d { transform-style: preserve-3d; }
+.backface-hidden { backface-visibility: hidden; }
+.rotate-y-180 { transform: rotateY(180deg); }
+
+/* ===== Grid Background ===== */
+.bg-grid {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+}
+
+/* ===== Animations ===== */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-float-delayed { animation: float-delayed 6s ease-in-out 3s infinite; }
+
+/* ===== Progress Ring ===== */
+@keyframes ring-fill {
+  from { stroke-dashoffset: 283; }
+}
